@@ -366,7 +366,3 @@ from the berries results to the DOM?
 ### Fetch, jQuery, XMLHttpRequest
 
 [Read More](/fetch-jquery-xml.md)
-
-### jQuery AJAX Cheat Sheet
-
-[Read More](/jQuery-ajax-cheatsheet.md)
