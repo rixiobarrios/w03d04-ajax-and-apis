@@ -9,22 +9,21 @@ After their fight last time, Dougie the Donut and Pizza Rat have since become be
 #### Learning Objectives
 
 - Making AJAX calls to an external API
-- Rendering the returned data using jQuery
+- Rendering the returned data using fetch()
 
 #### Prerequisites
 
 - AJAX
 - JavaScript
-- jQuery
 - HTML DOM
 
 ---
 
 ## Getting Started
 
-1. In today's `student_labs`, create a directory named `complaints_app`
-1. Inside that directory, create `app.js`, `index.html`, and `styles.css` files
-1. Link them up, as well as the jQuery CDN library, and make sure all things are connected correctly!
+1. In today's repo, create a directory named `complaints_app`
+1. Inside that directory, create `script.js`, `index.html`, and `styles.css` files
+1. Link them up and make sure all things are connected correctly!
 
 ## The App
 

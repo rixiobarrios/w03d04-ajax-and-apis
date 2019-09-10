@@ -78,8 +78,8 @@ JSON looks like this:
 
 ```json
 {
-	"users": [{ "name": "Bob", "id": 23 }, { "name": "Tim", "id": 72 }],
-	"content": "This is a piece of content"
+  "users": [{ "name": "Bob", "id": 23 }, { "name": "Tim", "id": 72 }],
+  "content": "This is a piece of content"
 }
 ```
 
@@ -144,7 +144,9 @@ where he coined the term _AJAX_.
 Building apps with `XMLHttpRequest` lead to a better user experience and faster
 applications but it was extremely verbose and cumbersome to work with. To make
 it easier, jQuery implemented the `.ajax()` api, abstracting away
-`XMLHttpRequest` into a chainable set of function calls.
+`XMLHttpRequest` into a chainable set of function calls. We won't be using jQuery
+in this course since it's an outdated library, but you can read more about `.ajax()`
+if interested: [http://api.jquery.com/jquery.ajax/](http://api.jquery.com/jquery.ajax/)
 
 More recently, WHATWG (the standards body for HTML) introduced the `fetch()` api
 as a browser-native implementation of AJAX similar to the jQuery api. Fetch has
@@ -157,13 +159,13 @@ to work with.
 
 ```js
 function reqListener() {
-	console.log(this.responseText)
+  console.log(this.responseText);
 }
 
-var oReq = new XMLHttpRequest()
-oReq.addEventListener("load", reqListener)
-oReq.open("GET", "http://www.example.org/example.txt")
-oReq.send()
+var oReq = new XMLHttpRequest();
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", "http://www.example.org/example.txt");
+oReq.send();
 ```
 
 ### We Do: Lets see it in Action
@@ -188,16 +190,16 @@ requests will be blocked.
 
 ```js
 // const url = "http://pokeapi.salestock.net/api/v2/pokemon/7"
-const url = "https://pokeapi.co/api/v2/pokemon/7"
+const url = "https://pokeapi.co/api/v2/pokemon/7";
 // use first url as a backup only
 
 fetch(url)
-	.then(res => {
-		console.log("success!", res)
-	})
-	.catch(err => {
-		console.log("something went wrong...", err)
-	})
+  .then(res => {
+    console.log("success!", res);
+  })
+  .catch(err => {
+    console.log("something went wrong...", err);
+  });
 ```
 
 Every AJAX request needs a URL (where we're making our request to), the type (or
@@ -241,16 +243,15 @@ Asynchronous also means that things won't run in the order that you expect them
 to. Here's an example:
 
 ```js
-console.log(1)
+console.log(1);
 
-fetch(url)
-	.then(res => {
-		if (res.ok) {
-			console.log(2)
-		}
-})
+fetch(url).then(res => {
+  if (res.ok) {
+    console.log(2);
+  }
+});
 
-console.log(3)
+console.log(3);
 ```
 
 Try it! You might be surprised that you'll see 1, 3, 2 in the console.
@@ -273,10 +274,10 @@ Ex:
 
 ```js
 fetch(url).then(res => {
-	if (res.ok) {
-		console.log("celebrate!")
-	}
-})
+  if (res.ok) {
+    console.log("celebrate!");
+  }
+});
 ```
 
 ### The API Response
@@ -290,15 +291,15 @@ Let's change our `script.js` file to incorporate this.
 
 ```js
 fetch(url)
-	.then(res => {
-		return res.json()
-	})
-	.then(res => {
-		console.log("success!", res)
-	})
-	.catch(err => {
-		console.log("something went wrong...", err)
-	})
+  .then(res => {
+    return res.json();
+  })
+  .then(res => {
+    console.log("success!", res);
+  })
+  .catch(err => {
+    console.log("something went wrong...", err);
+  });
 ```
 
 What we have above is an example of chaining. You are almost guaranteed to have
@@ -307,9 +308,9 @@ the above code to something like this...
 
 ```js
 fetch(url)
-	.then(res => res.json())
-	.then(res => console.log("success!", res))
-	.catch(err => console.log("something went wrong...", err))
+  .then(res => res.json())
+  .then(res => console.log("success!", res))
+  .catch(err => console.log("something went wrong...", err));
 ```
 
 We can then dig through this response just like any other JS object to pull up
@@ -363,6 +364,6 @@ from the berries results to the DOM?
 
 [Read More](/apiKeysExercise.md)
 
-### Fetch, jQuery, XMLHttpRequest
+### Fetch & XMLHttpRequest
 
-[Read More](/fetch-jquery-xml.md)
+[Read More](/fetch-xml.md)
