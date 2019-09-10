@@ -42,12 +42,7 @@ Adding the API key allows you to utilize all that the Cat API has to offer!
 2. Change into the new directory.
 3. Fulfill the listed requirements.
 
-Starter code is available in [`lib/challenge.js`](lib/challenge.js). You are
-required to turn in your submission by making a pull request on the original
-repository.
-
-Unless otherwise specified on the calendar or by an instructor, homework is due
-the next morning by 9:00am.
+Starter code is available in [`lib/challenge.js`](lib/challenge.js).
 
 ## Requirements
 
