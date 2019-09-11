@@ -1,8 +1,8 @@
 # Fetch & XMLHttpRequest
 
-There are three ways of making AJAX calls in JavaScript. The oldest is `XMLHttpRequest`. `fetch()` is the emerging standard.
+There are a few ways of making AJAX calls in JavaScript. The oldest is `XMLHttpRequest`. `fetch()` is the emerging standard.
 
-Here we have three `GET` requests to the same endpoint using each of the three methods:
+Here we have two `GET` requests to the same endpoint using each of the two methods:
 
 #### `fetch()`
 
