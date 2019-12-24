@@ -82,11 +82,19 @@ XML looks like this:
 
 #### JSON
 
-**JSON** stands for "JavaScript Object Notation" and has become a universal
+All data sent via HTTP is sent as strings. Unfortunately, what we really want to
+pass between web applications is **structured data** (i.e., arrays and hashes).
+In order to do so, native data structures are **serialized**: converted from a
+javascript object into a string representation of the data (aka serialization), 
+called **JSON** which stands for "JavaScript Object Notation". This string can 
+be transmitted and then parsed back into data (de-serialized).
+
+**JSON** has become a universal
 standard for sending and receiving data across the web. It is light-weight,
 easy-to-read and quick to parse.
 
-JSON is just a long string of characters. It is based off the JavaScript Object syntax. One notable difference is that double quotes must always be used for keys and values.
+JSON is just a long string of characters. It is based off the JavaScript Object syntax. 
+One notable difference is that double quotes must always be used for keys and values.
 
 JSON looks like this:
 
@@ -96,14 +104,6 @@ JSON looks like this:
   "content": "This is a piece of content"
 }
 ```
-
-#### What is Serialization?
-
-All data sent via HTTP is sent as strings. Unfortunately, what we really want to
-pass between web applications is **structured data** (i.e., arrays and hashes).
-In order to do so, native data structures are **serialized**: converted from a
-javascript object into a string representation of the data. This string can be
-transmitted and then parsed back into data (de-serialized).
 
 ### Working with an API
 
