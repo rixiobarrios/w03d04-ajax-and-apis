@@ -33,12 +33,24 @@ interact with the web app, consider the following questions:
 
 **API** stands for "Application Programming Interface" and is a way of
 describing software design. At the highest level, an API is any application with
-a set of instructions for how programmers can interact with it. The DOM is
+a set of instructions for how programmers can interact with it (e.g., getting data). The DOM is
 actually an example of an API.
 
-When we're talking about the web (and web APIs), we're generally talking about
-an application that we interact with through it's routes. However, requests to
-an API's routes won't respond with views, they'll respond with data.
+Many web sites have their own data, but they can pull in other data. For example, many news sites have a weather widget. This widget gets its data from a weather resource. There are many APIs that can be used by individuals and companies. Some are totally free, some are available for a small fee, and some are really expensive.
+
+There are APIs for
+- Weather
+- Stocks
+- Beer
+- Dictionaries
+- Books
+- Sports
+- Art
+- Games
+- Movies
+
+Here is a good list of [Free Apis](https://github.com/toddmotto/public-apis)
+
 
 ### API Data
 
@@ -74,6 +86,8 @@ XML looks like this:
 standard for sending and receiving data across the web. It is light-weight,
 easy-to-read and quick to parse.
 
+JSON is just a long string of characters. It is based off the JavaScript Object syntax. One notable difference is that double quotes must always be used for keys and values.
+
 JSON looks like this:
 
 ```json
@@ -97,8 +111,6 @@ APIs can be either public or private. If an API is public, anyone can access the
 data behind it. If an API is private, then you'll need to get a password (called
 an API Key) or go through some other form of authorization before you can access
 data through that API.
-
-Here is a good list of [Free Apis](https://github.com/toddmotto/public-apis)
 
 We'll start by exploring a public API: [PokéApi](https://pokeapi.co/)
 
