@@ -191,13 +191,10 @@ Let's setup a mini page to make requests from.
 - Make a new folder called `js-pokeapi-ajax` in your sandbox.
 - Create an `index.html` and a `script.js` file. Link your script in your html
   file.
-- `npm install -g http-server` to install a package called `http-server`
-  globally.
-- Run `http-server` in the new `js-pokeapi-ajax` folder.
-- Open your browser to `localhost:8080` and open the console
+- Use Live Server to open up the `index.html` page.
 
 Add the following code to your script! Then open your index.html file in the
-browser **using a live server**. Don't open it using the `open` command or the
+browser **using Live Server**. Don't open it using the `open` command or the
 requests will be blocked.
 
 ```js
