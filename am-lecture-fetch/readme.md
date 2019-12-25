@@ -371,8 +371,8 @@ from the berries results to the DOM?
 
 ### API Keys
 
-[Read More](https://git.generalassemb.ly/seir-826/w03d04-ajax-and-apis/blob/master/am-lecture-fetch/apiKeysExercise.md)
+[Read More](https://git.generalassemb.ly/seir-129/w03d04-ajax-and-apis/blob/master/am-lecture-fetch/apiKeysExercise.md)
 
 ### Fetch & XMLHttpRequest
 
-[Read More](https://git.generalassemb.ly/seir-826/w03d04-ajax-and-apis/blob/master/am-lecture-fetch/fetch-xml.md)
+[Read More](https://git.generalassemb.ly/seir-129/w03d04-ajax-and-apis/blob/master/am-lecture-fetch/fetch-xml.md)
