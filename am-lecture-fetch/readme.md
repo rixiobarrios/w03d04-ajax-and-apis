@@ -83,7 +83,7 @@ XML looks like this:
 #### JSON
 
 All data sent via HTTP is sent as strings. Unfortunately, what we really want to
-pass between web applications is **structured data** (i.e., arrays and hashes).
+pass between web applications is **structured data** (i.e., arrays and objects).
 In order to do so, native data structures are **serialized**: converted from a
 javascript object into a string representation of the data (aka serialization), 
 called **JSON** which stands for "JavaScript Object Notation". This string can 
