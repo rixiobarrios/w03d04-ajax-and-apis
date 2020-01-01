@@ -18,17 +18,6 @@ Today, we're going to learn how to request information from third-party
 databases, and how to make our applications more dynamic by making it so our
 application doesn't need to refresh the page to make a request to an API server!
 
-## Turn & Talk (10 minutes, 0:15)
-
-> 10 minutes: 5 min T&T, 5 min review
-
-[Open up Google Maps in your browser](https://www.google.com/maps). As you
-interact with the web app, consider the following questions:
-
-1. How many times do you see the page refresh?
-1. When you request new data (i.e. by searching for a location), does the page
-   refresh? Does the Google Maps app get data from a server?
-
 ## What is an API (15 minutes, 0:30)
 
 **API** stands for "Application Programming Interface" and is a way of
